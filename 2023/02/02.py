@@ -51,7 +51,7 @@ def cube_conundrum_second_part(input) -> int:
     return output
 
 
-with open("input02-23.txt") as f:
+with open("input") as f:
     input = f.read().splitlines()
 
 print(f"First part: {cube_conundrum_first_part(input)}")

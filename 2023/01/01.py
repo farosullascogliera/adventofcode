@@ -74,7 +74,7 @@ def findNumber(s) -> int:
     return n
 
 
-with open("input01-23.txt") as f:
+with open("input.txt") as f:
     input = f.read().splitlines()
 
 print(f"First part: {trebuchet_first_part(input)}")
