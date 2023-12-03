@@ -2,10 +2,17 @@ def gear_ratios_first_puzzle(input) -> int:
     output = 0
 
     for line in input:
-        chart = {}
-        
+        if input.index(line) == 0:
+            nextLine = input[line+1]
+            for char in line:
+                if line.index(char) == 0:
+                    if char.isdigit():
+                        pass
+        elif input.index(line) == len(line):
+            pass
+        else:
+            pass
 
-    output = chart
     return output
 
 
