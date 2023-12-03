@@ -3,11 +3,13 @@ def gear_ratios_first_puzzle(input) -> int:
 
     for line in input:
         if input.index(line) == 0:
-            nextLine = input[line+1]
+            nextLine = input[input.index(line)+1]
             for char in line:
                 if line.index(char) == 0:
                     if char.isdigit():
-                        pass
+                        if ((not nextLine[line.index(char)].isdigit() and nextLine[line.index(char)] != '.') and
+                                (not nextLine[line.index(char)+1].isdigit() and nextLine[line.index(char)+1] != '.')):
+                            print(char)
         elif input.index(line) == len(line):
             pass
         else:
